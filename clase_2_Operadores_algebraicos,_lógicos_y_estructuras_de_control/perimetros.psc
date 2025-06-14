@@ -25,17 +25,13 @@ Algoritmo perimetros
 				Leer radio
 				perimetro = 2 * PI * radio
 				Escribir "el radio es: " perimetro
-			"triangulo":
-				Escribir "ingresar base del triangulo"
-				Leer base
-				Escribir "escribir altura del triangulo"
-				Leer altura
-				perimetro = base * altura / 2
 			De Otro Modo:
 				Escribir "no corresponde a una figura cargada al sistema"
 				
-				
-	FinSegun
+		FinSegun
+		
+		// 4. 
+		Escribir "El perimetro del " figura "es: " perimetro
 	
 	
 	
