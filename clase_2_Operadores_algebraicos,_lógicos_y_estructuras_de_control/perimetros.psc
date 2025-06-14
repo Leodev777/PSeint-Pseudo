@@ -9,7 +9,9 @@ Algoritmo perimetros
 	// 1. Definimos e inicializamos las variables
 	
 	Definir figura como texto // "Cuadrado" o "Circulo"
-	Definir lado, radio, altura, perimetro Como Entero
+	Definir lado, lado2, lado3, radio, perimetro, area, base, altura Como real
+
+
 	
 	Escribir "ingresar figura"
 	Leer figura
@@ -25,18 +27,31 @@ Algoritmo perimetros
 				Leer radio
 				perimetro = 2 * PI * radio
 				Escribir "el radio es: " perimetro
+			"area de triangulo":
+				Escribir "ingresar base:"
+				Leer base
+				Escribir "ingresar altura:"
+				Leer altura
+				perimetro = base * altura / 2
+				Escribir "el área del triangulo es: " area
+				
+			"triangulo":
+				Escribir "ingresar los 3 lados del triangulo"
+				Leer lado
+				Leer lado2
+				Leer lado3
+				perimetro = lado + lado2 + lado3
+				Escribir "el perimetro es: " perimetro
 			De Otro Modo:
 				Escribir "no corresponde a una figura cargada al sistema"
 				
 		FinSegun
+		si figura = "triangulo" o figura = "cuadrado" o figura = "circulo" Entonces
+			Escribir "El perimetro de la figura: " figura " es: " perimetro
+		SiNo
+			Escribir "El área de la: " figura "es: " area
+		FinSi
 		
-		// 4. 
-		Escribir "El perimetro del " figura "es: " perimetro
-	
-	
-	
-	
-	
 	
 	
 FinAlgoritmo
