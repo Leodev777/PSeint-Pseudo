@@ -33,6 +33,6 @@ Algoritmo Pares
 	
 	// 5. Devolver el numero de cifras
 	
-	Escribir "La suma de los N° Pares hasta el numero: " numeroAzar, " es: " sumaPares
+	Escribir "La suma de los N° Pares hasta el número: " numeroAzar, " es: " sumaPares
 	
 FinAlgoritmo
