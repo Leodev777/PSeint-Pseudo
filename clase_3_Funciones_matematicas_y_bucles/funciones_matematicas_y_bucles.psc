@@ -139,5 +139,68 @@
 // Similar al bucle MIENTRAS solo que, en este caso, la evaluacion de la operacion
 // expresion logica si hace al final en lugar de al principio.
 // Se garantiza que el codigo se ejecuta, al menos, una vez ( la primera )
+// Sintaxis:
+// REPETIR 
+	// ejecutar_codigo
+// HASTA QUE expresion_logica
+// REPETIR		
+	// ejecutar_codigo
+// HASTA QUE (expre_logica_1) ( OP_LOGICA) (expre_logica_2)
 
+// Como hacemos que esto pare? NOTA: si la op.logica es siempre VERDADERA, sera un bucle INFINITO
+// es necesario que la expresion logica sea modificad en el codigo
+// EJ:
+//Algoritmo prueba
+	//Definir temporizador Como Entero
+//temporizador = 0
+
+//Escribir "cargar numero de segundos del temporizador"
+//Leer temporizador
+
+//Escribir "Comienza el temporizador . . . "
+//Repetir
+	//Escribir "Quedan ", temporizador, " segundos"
+	//Esperar 1 Segundos
+	//temporizador = temporizador - 1
+	//Hasta Que (temporizador = 0)
+//Escribir "El temporizador ha finalizado!"
+//FinAlgoritmo
+
+// la pequeña diferencia no es mientras se cumpla esto, sino hasta que se cumpla esto
+// la evaluacion siempre se realiza al FinAlgoritmo
+
+// _____________ BUCLE PARA __________________
+
+// El numero de repeticiones viene determinado por el valor de una variable,
+// la cual toma un valor inicial que se va incrementando o decrementando en cada repeticion
+
+// A diferencia de los anteriores bucles, no es necesario incluir una instruccion
+// el codigo que modifice la variable que determina las ejecuciones, sino que 
+// se hace automaticamente
+
+// en los bucles anteriores en los que tenemos en la parte del codigo dentro de la estructura
+// ibamos a tener que actualizar el valor de una variable que estuviese en el valor de una exmpresion
+// logica para poder salir del bucle, en este caso lo hace de forma automatica. 
+
+// sintaxis:
+//para i = valor_inicial hasta valor_final con paso incr_decr hacer 
+	//ejecutar_codigo
+//FinPara
 	
+// NOTA: la variable I del bucle PARA tiene que DEFINIRSE, como cualquier otra variable previamente
+Algoritmo prueba2
+	Definir i, temporizador Como Entero
+	temporizador = 0
+	i = 0
+	
+	Escribir "Cargar el número de segundos del temporizador"
+	Leer temporizador
+	
+	Escribir "Comienza el temporizador..."
+	para i = temporizador Hasta 1 Con paso -1 Hacer
+		Escribir "Quedan ", i, " segundos"
+		Esperar 1 Segundos
+	FinPara
+	Escribir "El temporizador ha finalizado!"
+FinAlgoritmo
+
