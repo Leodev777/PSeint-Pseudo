@@ -1,4 +1,4 @@
-Algoritmo Array_Bidimensional
+Algoritmo Diagonal_Array_Bidimensional
 	// EJ: Pedir un número "n" (entero) y crear un array bidimensional "n" filas y "n" columnas
 	// donde todas las posiciones contengan "*" y en la diagonal, contengan "A"
 	// Imprimir el array bidimensional
@@ -44,6 +44,5 @@ Algoritmo Array_Bidimensional
 	FinPara
 	
 	// 6. Despedida
-	Escribir ""
 	Escribir "¡Programa finalizado!"
 FinAlgoritmo
