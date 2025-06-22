@@ -54,5 +54,5 @@ Algoritmo Sumando_los_vecinos
 	Escribir "La cantidad de vecinos de la planta 2 es: " vecinoPlanta2
 	Escribir "La cantidad de vecinos de la planta 1 es: " vecinoPlanta1
 	
-	Escribir "GRACIAS POR PARTICIPAR DE LA CLASE!!"
+	Escribir "GRACIAS POR PARTICIPAR DE LA CLASE!"
 FinAlgoritmo
