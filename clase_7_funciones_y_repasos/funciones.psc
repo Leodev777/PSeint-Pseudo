@@ -1,4 +1,4 @@
-// Repasando contenidos hasta el momento!
+// Repasando contenidos hasta el momento!!
 
 // A. Variables ( entero, real, logica, texto )
 // B. Estructuras de datos: arrays unidimensinales y bidimensionales
