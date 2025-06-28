@@ -3,9 +3,9 @@
 // Recordar: Para calcular MCM de dos numeros, habria que hacer lo siguiente
 // 1. Calcular los multiplos de cada numero
 // Ej: 2 y 3
-// 2x1=2, 2x2=4, 2x3=6, 2x4=8, 2x5=10, 2x6=12, 2x7=14, 2x8=16, 2x9=18, 2x10=20
-// 3x1=3, 3x2=6, 3x3=9, 3x4=12, 3x5=15, 3x6=18, 3x7=21, 3x8=24, 3x9=27, 3x10=30
-// 2. ver cual es el menor de los multiplos comunes
+// 2x1=2; 2x2=4; 2x3=6; 2x4=8; 2x5=10; 2x6=12; 2x7=14; 2x8=16; 2x9=18; 2x10=20 . . . 
+// 3x1=3; 3x2=6; 3x3=9; 3x4=12; 3x5=15; 3x6=18; 3x7=21; 3x8=24; 3x9=27; 3x10=30 . . . 
+// 2. ver cual es el menor de los multiplos comunes ( en este caso el minimo comun multiplo de 2 y 3 es 6, luego el 18.
 // Hacer uso de una Funcion 
 // 1. Funcion MCM - calcula em MCM de dos numeros (todos los calculos)
 
