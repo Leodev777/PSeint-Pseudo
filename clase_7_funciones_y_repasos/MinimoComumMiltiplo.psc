@@ -1,36 +1,61 @@
-// Ejercicio
-// Hacer un programa que calcule el minimo comun multiplo (MCM) de dos numeros, teniendo en cuenta los 100 primeros miltiplos
-// Recordar: Para calcular MCM de dos numeros, habria que hacer lo siguiente
-// 1. Calcular los multiplos de cada numero
-// Ej: 2 y 3
-// 2x1=2; 2x2=4; 2x3=6; 2x4=8; 2x5=10; 2x6=12; 2x7=14; 2x8=16; 2x9=18; 2x10=20 . . . 
-// 3x1=3; 3x2=6; 3x3=9; 3x4=12; 3x5=15; 3x6=18; 3x7=21; 3x8=24; 3x9=27; 3x10=30 . . . 
-// 2. ver cual es el menor de los multiplos comunes ( en este caso el minimo comun multiplo de 2 y 3 es 6, luego el 18.
-// Hacer uso de una Funcion 
-// 1. Funcion MCM - calcula em MCM de dos numeros (todos los calculos)
-
-Funcion minimo = MCM8(num1, num2)
+Funcion minimo = MCM(num1, num2)
 	// 1. Definir e inicializar variables
+	Definir minimo, multiplosnum1, multiplosnum2, i, j Como Entero
+	Dimension multiplosnum1[100]
+	Dimension multiplosnum2[100]
+	i = 0
+	j = 0
 	
-	// 2. Calculamos los multiplos de los dos numeros. El mimino, lo inicializamos al numero multiplo +1 de uno de los
-	// numeros
+	// 2. Calculamos los multiplos de los dos numeros. El mínimo se inicializa con el mayor de los últimos múltiplos
+	Para i = 0 Hasta 99 Con Paso 1 Hacer
+		multiplosnum1[i] = num1 * (i + 1)
+		multiplosnum2[i] = num2 * (i + 1)
+	FinPara
 	
-	// 3. Comparar todos los multiplos y quedarlos con el mas bajo que sea comum
+	Si multiplosnum1[99] > multiplosnum2[99] Entonces
+		minimo = multiplosnum1[99]
+	SiNo
+		minimo = multiplosnum2[99]
+	FinSi
 	
-	// 4. Si el minimo sigue siendo el mismo que al que inicializamos, es que no ah habido ningun multiplo comun en los
-	// 100 primeros multiplos. Devolvemos 0 para indicar este caso
+	// 3. Comparar todos los multiplos y quedarnos con el menor común
+	Para i = 0 Hasta 99 Con Paso 1 Hacer
+		Para j = 0 Hasta 99 Con Paso 1 Hacer
+			Si (multiplosnum1[i] = multiplosnum2[j]) Y (multiplosnum1[i] < minimo) Entonces
+				minimo = multiplosnum1[i]
+			FinSi
+		FinPara
+	FinPara
+	
+	// 4. Si no se encontró ningún MCM (improbable con números válidos), devolver 0
+	Si minimo = multiplosnum1[99] O minimo = multiplosnum2[99] Entonces
+		minimo = 0  // No se encontró en los primeros 100 múltiplos
+	FinSi
 	
 FinFuncion
 
 Algoritmo MinimoComumMiltiplo
 	
 	// 1. Definir e inicializar variables
+	Definir minComumMiltiplo, num1, num2 Como Entero
+	minComumMiltiplo = 0
+	num1 = 0
+	num2 = 0
 	
-	// 2. pedir por consola los dos numeros
+	// 2. Pedir por consola los dos números
+	Escribir "Ingrese el primer número:"
+	Leer num1
+	Escribir "Ingrese el segundo número:"
+	Leer num2
 	
-	// 3. Llamar a la funcion que calcula el MCM
+	// 3. Llamar a la función que calcula el MCM
+	minComumMiltiplo = MCM(num1, num2)
 	
-	// 4. Comprobar si hemos encontrado el MCM y mostrarlo por la consola
-
+	// 4. Mostrar el resultado
+	Si minComumMiltiplo <> 0 Entonces
+		Escribir "El MCM de ", num1, " y ", num2, " es: ", minComumMiltiplo
+	SiNo
+		Escribir "No se encontró un MCM en los primeros 100 múltiplos."
+	FinSi
+	
 FinAlgoritmo
-	
