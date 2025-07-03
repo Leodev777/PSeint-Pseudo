@@ -14,6 +14,7 @@
 // ** ** B
 // H  H **
 // ** H **
+//
 
 //Función que muestra el tablero que se le pasa como parámetro
 Funcion MostrarTablero(tableroJuego, dimen)
