@@ -162,7 +162,7 @@ Algoritmo HundirFlota
 	Si (barcosHundidos = barcos) Entonces
 		Escribir "Has conseguido hundir todos mis barcos. GANASTE!"
 	SiNo
-		Escribir "Aún me quedan barcos a flote. PERDISTE!"
+		Escribir "Aún me quedan barcos a flote. PERDISTE!!"
 	FinSi
 	
 FinAlgoritmo
